@@ -12,11 +12,6 @@ import (
 	"github.com/tinyzimmer/go-gst/gst/app"
 )
 
-type streamSink struct {
-	sink  *gst.Element
-	queue *gst.Element
-}
-
 func buildAudioElements(pipeline *gst.Pipeline, stream bool) ([]*gst.Element, error) {
 
 	if stream {
